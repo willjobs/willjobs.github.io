@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'fontawesome';
+	src: url('fonts/fontawesome.eot');
+	src: url('fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
+		url(fonts/fontawesome.woff2) format('woff2'),
+		url('fonts/fontawesome.woff') format('woff'),
+		url('fonts/fontawesome.ttf') format('truetype'),
+		url('fonts/fontawesome.svg#fontawesome') format('svg');
+}
+
+[class^="fa-"]:before, [class*=" fa-"]:before {
+	font-family: "fontawesome";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1em;
+	margin-left: .2em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.fa-envelope-o:before { content: '\e800'; }
+.fa-phone:before { content: '\e801'; }
+.fa-github:before { content: '\f09b'; }
+.fa-long-arrow-left:before { content: '\f177'; }
+.fa-linkedin-square:before { content: '\f30c'; }
+
+@font-face {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 300;
+	src: url(fonts/lato-v13-latin-300.eot);
+	src: local('Lato Light'), local('Lato-Light'), 
+		url(fonts/lato-v13-latin-300.eot?#iefix) format('embedded-opentype'), 
+		url(fonts/lato-v13-latin-300.woff2) format('woff2'), 
+		url(fonts/lato-v13-latin-300.woff) format('woff'), 
+		url(fonts/lato-v13-latin-300.ttf) format('truetype'), 
+		url(fonts/lato-v13-latin-300.svg#Lato) format('svg');
+}
+@font-face {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/lato-v13-latin-regular.eot);
+	src: local('Lato Regular'), local('Lato-Regular'),
+		url(fonts/lato-v13-latin-regular.eot?#iefix) format('embedded-opentype'),
+		url(fonts/lato-v13-latin-regular.woff2) format('woff2'),
+		url(fonts/lato-v13-latin-regular.woff) format('woff'),
+		url(fonts/lato-v13-latin-regular.ttf) format('truetype'),
+		url(fonts/lato-v13-latin-regular.svg#Lato) format('svg');
+}
+@font-face {
+	font-family: Rokkitt;
+	font-style: normal;
+	font-weight: 400;
+	src: url(fonts/rokkitt-v11-latin-regular.eot);
+	src: local('Rokkitt Regular'), local('Rokkitt-Regular'),
+		url(fonts/rokkitt-v11-latin-regular.eot?#iefix) format('embedded-opentype'),
+		url(fonts/rokkitt-v11-latin-regular.woff2) format('woff2'),
+		url(fonts/rokkitt-v11-latin-regular.woff) format('woff'),
+		url(fonts/rokkitt-v11-latin-regular.ttf) format('truetype'),
+		url(fonts/rokkitt-v11-latin-regular.svg#Rokkitt) format('svg');
+}
+@font-face {
+	font-family: Rokkitt;
+	font-style: normal;
+	font-weight: 600;
+	src: url(fonts/rokkitt-v11-latin-600.eot);
+	src: local('Rokkitt SemiBold'), local('Rokkitt-SemiBold'),
+		url(fonts/rokkitt-v11-latin-600.eot?#iefix) format('embedded-opentype'),
+		url(fonts/rokkitt-v11-latin-600.woff2) format('woff2'),
+		url(fonts/rokkitt-v11-latin-600.woff) format('woff'),
+		url(fonts/rokkitt-v11-latin-600.ttf) format('truetype'),
+		url(fonts/rokkitt-v11-latin-600.svg#Rokkitt) format('svg');
+}
+@font-face {
+	font-family: Rokkitt;
+	font-style: normal;
+	font-weight: 700;
+	src: url(fonts/rokkitt-v11-latin-700.eot);
+	src: local('Rokkitt Bold'), local('Rokkitt-Bold'),
+		url(fonts/rokkitt-v11-latin-700.eot?#iefix) format('embedded-opentype'),
+		url(fonts/rokkitt-v11-latin-700.woff2) format('woff2'),
+		url(fonts/rokkitt-v11-latin-700.woff) format('woff'),
+		url(fonts/rokkitt-v11-latin-700.ttf) format('truetype'),
+		url(fonts/rokkitt-v11-latin-700.svg#Rokkitt) format('svg');
+}

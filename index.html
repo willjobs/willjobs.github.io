@@ -1,0 +1,430 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <title>Will Jobs - Home</title>
+
+        <link href="dependencies/layout.css" rel="stylesheet" type="text/css">
+        <link href="dependencies/fonts.css" rel="stylesheet" type="text/css">
+        <link href="dependencies/lightslider/lightslider.min.css" type="text/css" rel="stylesheet" />
+
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <script type="text/javascript">
+            document.documentElement.className += ' js';
+
+            function showActor(delay) {
+                delay = delay || 400;
+
+                if($('#professional-wrapper').css('display')!='none') {
+                    $('#professional-id').removeClass('activeID').addClass('inactiveID');
+                    $('#professional-wrapper').slideUp(delay);
+                    $('#acting-wrapper').delay(delay).slideDown(delay);
+                } else {
+                    $('#acting-wrapper').slideDown(delay);
+                }
+                $('#actor-id').addClass('activeID').removeClass('inactiveID');
+            }
+            function showProfessional(delay) {
+                delay = delay || 400;
+
+                if($('#acting-wrapper').css('display')!='none') {
+                    $('#actor-id').removeClass('activeID').addClass('inactiveID');
+                    $('#acting-wrapper').slideUp(delay);
+                    $('#professional-wrapper').delay(delay).slideDown(delay);
+                } else {
+                    $('#professional-wrapper').slideDown(delay);
+                }
+                $('#professional-id').addClass('activeID').removeClass('inactiveID');
+            }
+        </script>
+
+    </head>
+    <body>
+        <div style="padding-top: 20px;">
+            <h1 class="headline">Will Jobs is a <a class="identity inactiveID" id="professional-id" onclick="showProfessional()" href="#professional">data scientist</a> and <a class="identity activeID" id="actor-id" onclick="showActor()" href="#actor">actor</a>.</h1>
+            <div id="container" style="padding-top: 20px;">
+                <div id="professional-wrapper">
+                    <img src="photos/professional.jpg" />
+
+                    <div id="professional-resume">
+                        <div class="mainDetails">
+                            <div class="name">
+                                <h1>Will Jobs</h1>
+                                <h2>Data Scientist | Developer</h2>
+                            </div>
+
+                            <div class="contactDetails">
+                                <ul>
+                                    <li><a href="https://github.com/willjobs" target="_blank"><span class="fa fa-github"></span> willjobs</a></li>
+                                    <li><a href="https://linkedin.com/in/willjobs" target="_blank"><span class="fa fa-linkedin-square"></span> willjobs</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="mainArea">
+                            <section>
+                                <article>
+                                    <div class="sectionTitle">
+                                        <h1>Personal Profile</h1>
+                                    </div>
+
+                                    <div class="sectionContent">
+                                        <p>Master's student in statistics with a passion for finding insights in data. I am a quick learner and am eager to explore new problem domains. My attention to detail gives clients confidence in my work, and my thorough documentation helps my colleagues take advantage of and expand on my code. My background in consulting, programming, research, and the classroom has trained me to learn and contribute quickly and to communicate effectively in all settings.</p>
+                                    </div>
+                                </article>
+                                <div class="clear"></div>
+                            </section>
+
+                            <section>
+                                <div class="sectionTitle">
+                                    <h1>Key Skills</h1>
+                                </div>
+
+                                <div class="sectionContent">
+                                    <ul class="keySkills">
+                                        <li><span>Data</span>: R, Python (pandas, numpy, scikit-learn), Excel (with VBA/macros), DataRobot, Tableau, SAS (Certified)</li>
+                                        <li><span>Databases</span>: SQL, Oracle (PL/SQL), Microsoft Access, SQLite, SQL Server</li>
+                                        <li><span>Web</span>: PHP, JavaScript, jQuery, WordPress, HTML, CSS</li>
+                                        <li><span>Other</span>: Git; Linux command-line; ArcGIS; Microsoft Office; Adobe Photoshop, Illustrator, Acrobat</li>
+                                    </ul>
+                                </div>
+                                <div class="clear"></div>
+                            </section>
+
+                            <section>
+                                <div class="sectionTitle">
+                                    <h1>Education</h1>
+                                </div>
+
+                                <div class="sectionContent">
+                                    <article>
+                                        <h2>University of Massachusetts Amherst - M.S. Statistics</h2>
+                                        <p>
+                                            GPA: 4.00/4.00<br />
+                                            Expected graduation: May 2021<br />
+                                            Coursework: Statistical Computing, Regression Modeling, Mathematical Statistics<br />
+                                        </p>
+                                    </article>
+                                    <article>
+                                        <h2>Vassar College - B.A., Chemistry (minor: Computer Science)</h2>
+                                        <p>
+                                            GPA: 3.99/4.00 (Major: 4.00/4.00)<br />
+                                            Phi Beta Kappa Society, General Honors, Departmental Honors<br />
+                                            Publications in <span style="font-style:italic;">ACS Omega</span>, <span style="font-style:italic;">Biophysical Journal</span>, and <span style="font-style:italic;">Limnology and Oceanography</span><br />
+                                        </p>
+                                    </article>
+                                </div>
+                                <div class="clear"></div>
+                            </section>
+
+                            <section>
+                                <div class="sectionTitle">
+                                    <h1>Work Experience</h1>
+                                </div>
+
+                                <div class="sectionContent">
+                                    <article>
+                                        <h2>ROI Solutions &nbsp;|&nbsp; February 2018&ndash;January 2020</h2>
+                                        <p class="subDetails">Database Developer II (February 2019) <span class="fa fa-long-arrow-left"></span> PL/SQL & Application Developer (February 2018)</p>
+                                        <ul>
+                                            <li>Develop Python scripts to interact with an automated machine learning platform (DataRobot) to create models of a client&rsquo;s previous direct mail campaigns. Model predictions were analyzed in Python (using pandas, matplotlib, and numpy) to identify likely responders to future campaigns and to summarize expected improvements in campaign performance</li>
+                                            <li>Improve the performance of an Oracle database serving dozens of national and international nonprofit clients</li>
+                                            <li>Rewrite internal PL/SQL procedures to reduce run-time and improve code clarity and maintainability</li>
+                                            <li>Interact with client service and product teams to identify pain points in our processes and develop solutions that help better serve clients</li>
+                                        </ul>
+                                    </article>
+
+                                    <article>
+                                        <h2>The Cadmus Group &nbsp;|&nbsp; August 2011&ndash;February 2018</h2>
+                                        <p class="subDetails">Associate (May 2016)  <span class="fa fa-long-arrow-left"></span> Senior Analyst (May 2014) <span class="fa fa-long-arrow-left"></span> Analyst (May 2012) <span class="fa fa-long-arrow-left"></span> Research Analyst (August 2011)</p>
+                                        <ul>
+                                            <li>Analyzed large datasets and developed visualizations to support research on climate change, hydraulic fracturing, drinking water contaminants, greenhouse gas emissions, and home energy use</li>
+                                            <li>Developed database applications in Microsoft Access in support of a variety of EPA programs</li>
+                                            <li>Designed and implemented an application with an Oracle database and APEX frontend for the Army Corps of Engineers to conduct national-scale climate change vulnerability assessments</li>
+                                            <li>Ported a 1980s-era water quality monitoring application from Pascal to VB.NET</li>
+                                        </ul>
+                                    </article>
+
+                                    <article>
+                                        <h2>WorldTeach Thailand &nbsp;|&nbsp; October 2016&ndash;August 2017</h2>
+                                        <p class="subDetails">Volunteer English Teacher</p>
+                                        <ul>
+                                            <li>Developed an English language curriculum, planned lessons, and taught English to 150 secondary school students</li>
+                                        </ul>
+                                    </article>
+
+                                    <article>
+                                        <h2>Vassar Environmental Research Institute &nbsp;|&nbsp; June 2010&ndash;August 2011</h2>
+                                        <p class="subDetails">Collins Research Fellow</p>
+                                        <ul>
+                                            <li>Developed a web application allowing the public to query periodically-updated stream monitoring data</li>
+                                            <li>Coordinated and conducted field research and analysis of watersheds in the Hudson Valley</li>
+                                        </ul>
+                                    </article>
+                                </div>
+                                <div class="clear"></div>
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="acting-wrapper">
+
+                    <ul id="lightSlider" style="height:400px;">
+                        <li><img src="photos/02.jpg" /></li>
+                        <li><img src="photos/03.jpg" /></li>
+                        <li><img src="photos/09.jpg" /></li>
+                        <li><img src="photos/01.jpg" /></li>
+                        <li><img src="photos/06.jpg" /></li>
+                        <li><img src="photos/07.jpg" /></li>
+                        <li><img src="photos/05.jpg" /></li>
+                        <li><img src="photos/08.jpg" /></li>
+                    </ul>
+
+                    <div id="actor-resume">
+                        <div class="mainDetails">
+                            <div class="name">
+                                <h1>Will Jobs</h1>
+                            </div>
+                        </div>
+
+                        <div id="looks">
+                            <div>Height: 6'1"</div>
+                            <div>Weight: 185 lbs.</div>
+                            <div>Hair: Blonde</div>
+                            <div>Eyes: Blue</div>
+                            <div>Age Range: 21-35</div>
+                        </div>
+
+                        <section>
+                            <h2>THEATER:</h2>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Burning</td>
+                                        <td>Cole</td>
+                                        <td>Theatre@First</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MicroBrew</td>
+                                        <td>Ensemble</td>
+                                        <td>ImprovBoston</td>
+                                    </tr>
+                                    <tr>
+                                        <td>One-Minute Play Festival</td>
+                                        <td>Ensemble</td>
+                                        <td>Director: Alex Smith</td>
+                                    </tr>
+                                    <tr>
+                                        <td>The Mystery Play (staged reading)</td>
+                                        <td>Mouse; Death</td>
+                                        <td>The Poet&rsquo;s Theatre</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Drunk Enough To Say I Love You?</td>
+                                        <td>Guy #1 (lead)</td>
+                                        <td>Artist&rsquo;s Theater of Boston</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Murph (staged reading)</td>
+                                        <td>Murph</td>
+                                        <td>Open Theatre Project</td>
+                                    </tr>
+                                    <tr>
+                                        <td>The Love of the Nightingale</td>
+                                        <td>Captain; Theseus; Chorus</td>
+                                        <td>Open Theatre Project</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hunger, Lies &amp; History
+                                        </td>
+                                        <td>Cesar; Vampire</td>
+                                        <td>Performing Fusion Theatre</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lovers&rsquo; Quarrels</td>
+                                        <td>Val&egrave;re</td>
+                                        <td>Imaginary Beasts</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trojan Women: A Love Story</td>
+                                        <td>Aeneas</td>
+                                        <td>Artists&rsquo; Theater of Boston</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Somerville Theatre Festival</td>
+                                        <td>Alec; Billy Dog</td>
+                                        <td>Performing Fusion Theatre</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Killer Joe</td>
+                                        <td>Chris</td>
+                                        <td>Zero Point Theater</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Stealing The Packard (staged reading)</td>
+                                        <td>Jasper</td>
+                                        <td>Theatre@First</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Much Ado About Nothing</td>
+                                        <td>Benedick</td>
+                                        <td>Artists&rsquo; Theater of Boston</td>
+                                    </tr>
+                                    <tr>
+                                        <td>The Merchant of Venice</td>
+                                        <td>Bassanio</td>
+                                        <td>Zero Point Theater</td>
+                                    </tr>
+                                    <tr>
+                                        <td>David: The Musical</td>
+                                        <td>Uriah, Ensemble</td>
+                                        <td>Zero Point Theater</td>
+                                    </tr>
+                                    <tr>
+                                        <td>How The Other Half Loves</td>
+                                        <td>Bob Phillips</td>
+                                        <td>Zero Point Theater</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Waiting For Lefty</td>
+                                        <td>Miller</td>
+                                        <td>Zero Point Theater</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zero Point Winter Festival</td>
+                                        <td>Ensemble</td>
+                                        <td>Zero Point Theater</td>
+                                    </tr>
+                                    <tr>
+                                        <td>A Midsummer Night&rsquo;s Dream</td>
+                                        <td>Lysander</td>
+                                        <td>Rhinebeck Performing Arts Center</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Too Much Light Makes The Baby Go Blind</td>
+                                        <td>Writer/Director/Ensemble</td>
+                                        <td>Unbound (Vassar College)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Spinning Into Butter</td>
+                                        <td>Greg Sullivan</td>
+                                        <td>Philaletheis (Vassar College)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Happy Birthday, Wanda June!</td>
+                                        <td>Looseleaf Harper</td>
+                                        <td>Philaletheis (Vassar College)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <section>
+                            <h2>FILM:</h2>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Freudian Slip</td>
+                                        <td>Tyler</td>
+                                        <td>Boston University student film</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Express Lane</td>
+                                        <td>Paul</td>
+                                        <td>Vassar College student film</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <section>
+                            <h2>TRAINING/EDUCATION:</h2>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Meisner Technique</td>
+                                        <td>Lyralen Kaye</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chekhov Technique</td>
+                                        <td>Scott Fielding</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Long-form Improv Comedy</td>
+                                        <td>Joe Creedon</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shakespeare Weekend Intensive</td>
+                                        <td>Shakespeare & Company</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Improvisational Comedy 101-601</td>
+                                        <td>ImprovBoston</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Beginning Modern Dance</td>
+                                        <td>Vassar College</td>
+                                    </tr>
+                                </tbody>
+                             </table>
+                        </section>
+                        <section>
+                            <h2>OTHER SKILLS:</h2>
+                            <p>Improvisational comedy, directing, swing dancing, ballroom dancing, basic guitar, juggling</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="dependencies/jquery-1.11.3.min.js"></script>
+        <script src="dependencies/lightslider/lightslider.min.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-46805416-3', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <script type="text/javascript">
+
+            $(document).ready(function() {
+                $("#lightSlider").lightSlider({
+                    item: 1,
+                    mode: "fade",
+                    speed: 650,
+                    auto: true,
+                    loop: true,
+                    pause: 4000,             
+                    controls: true,
+                    thumbItem:10,
+                    currentPagerPosition: 'middle'
+                });
+
+                if(window.location.hash) {
+                    var hash = window.location.hash.substring(1);
+                    if(hash==='professional') {
+                        showProfessional(0);
+                    } else {
+                        showActor(0);
+                    }
+                } else {
+                    showProfessional(0);
+                }
+
+                $('#container').show();
+
+            });
+
+        </script>
+
+    </body>
+</html>
