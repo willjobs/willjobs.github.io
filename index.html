@@ -10,48 +10,16 @@
 
     <link href="dependencies/layout.css" rel="stylesheet" type="text/css">
     <link href="dependencies/fonts.css" rel="stylesheet" type="text/css">
-    <link href="dependencies/lightslider/lightslider.min.css" type="text/css" rel="stylesheet" />
 
     <link rel="shortcut icon" href="favicon.ico" />
-
-    <script type="text/javascript">
-        document.documentElement.className += ' js';
-
-        function showActor(delay) {
-            delay = delay || 400;
-
-            if ($('#professional-wrapper').css('display') != 'none') {
-                $('#professional-id').removeClass('activeID').addClass('inactiveID');
-                $('#professional-wrapper').slideUp(delay);
-                $('#acting-wrapper').delay(delay).slideDown(delay);
-            } else {
-                $('#acting-wrapper').slideDown(delay);
-            }
-            $('#actor-id').addClass('activeID').removeClass('inactiveID');
-        }
-        function showProfessional(delay) {
-            delay = delay || 400;
-
-            if ($('#acting-wrapper').css('display') != 'none') {
-                $('#actor-id').removeClass('activeID').addClass('inactiveID');
-                $('#acting-wrapper').slideUp(delay);
-                $('#professional-wrapper').delay(delay).slideDown(delay);
-            } else {
-                $('#professional-wrapper').slideDown(delay);
-            }
-            $('#professional-id').addClass('activeID').removeClass('inactiveID');
-        }
-    </script>
-
 </head>
 
 <body>
-    <div style="padding-top: 20px;">
-        <h1 class="headline">Will Jobs is a data scientist and <a href="https://people.math.umass.edu/~wjobs/">master's student</a>.</h1>
-        <!--<h1 class="headline">Will Jobs is a <a class="identity inactiveID" id="professional-id" onclick="showProfessional()" href="#professional">data scientist</a>and <a class="identity activeID" id="actor-id" onclick="showActor()" href="#actor">actor</a>.</h1>-->
-        <div id="container" style="padding-top: 20px;">
-            <div id="professional-wrapper">
-                <img src="photos/professional.jpg" />
+    <div style="padding-top: 20px;"><!--skip-->
+        <h1 class="headline">Will Jobs is a data scientist and <a href="https://people.math.umass.edu/~wjobs/">master's student</a>.</h1><!--skip-->
+        <div id="container" style="padding-top: 20px;"><!--skip-->
+            <div id="professional-wrapper"><!--skip-->
+                <img src="photos/professional.jpg" /><!--skip-->
 
                 <div id="professional-resume">
                     <div class="mainDetails">
@@ -61,11 +29,11 @@
                         </div>
 
                         <div class="contactDetails">
-                            <ul>
-                                <li><a href="https://github.com/willjobs" target="_blank"><span class="fa fa-github"></span> willjobs</a></li>
-                                <li><a href="https://linkedin.com/in/willjobs" target="_blank"><span class="fa fa-linkedin-square"></span> willjobs</a></li>
-                            </ul>
-                        </div>
+                            <ul><!--skip-->
+                                <li><a href="https://github.com/willjobs" target="_blank"><span class="fa fa-github"></span> willjobs</a></li><!--skip-->
+                                <li><a href="https://linkedin.com/in/willjobs" target="_blank"><span class="fa fa-linkedin-square"></span> willjobs</a></li><!--skip-->
+                            </ul><!--skip-->
+                        </div><!--skip-->
 
                         <div class="clear"></div>
                     </div>
@@ -78,7 +46,7 @@
                                 </div>
 
                                 <div class="sectionContent">
-                                    <p>Master's student in statistics with a passion for finding insights in data. I am a quick learner and am eager to explore new problem domains. My attention to detail gives clients confidence in my work, and my thorough documentation helps my colleagues take advantage of and expand on my code. My background in consulting, programming, research, and the classroom has trained me to learn and contribute quickly and to communicate effectively in all settings.</p>
+                                    <p>Master's student in statistics with a passion for finding insights in data. I am a quick learner and am eager to explore new problem domains. My attention to detail gives clients confidence in my work, and my thorough documentation helps my colleagues take advantage of and expand on my code. My background in consulting, insurance, software development, and academia has trained me to learn and contribute quickly and to communicate effectively in all settings.</p>
                                 </div>
                             </article>
                             <div class="clear"></div>
@@ -92,7 +60,7 @@
                             <div class="sectionContent">
                                 <ul class="keySkills">
                                     <li><span>Data Science</span>: Python, R, SAS (Certified), Excel (+ VBA), Tableau</li>
-                                    <li><span>Machine Learning</span>: scikit-learn, H2O, DataRobot</li>
+                                    <li><span>Machine Learning</span>: scikit-learn, xgboost, H2O, DataRobot</li>
                                     <li><span>Databases</span>: SQL, Oracle (PL/SQL), Microsoft Access, SQLite, SQL Server</li>
                                     <li><span>Web</span>: PHP, JavaScript, jQuery, WordPress, HTML, CSS</li>
                                     <li><span>Other</span>: Git; Linux command-line; ArcGIS; Microsoft Office; Adobe Photoshop, Illustrator, Acrobat</li>
@@ -112,7 +80,7 @@
                                     <p>
                                         GPA: 3.95/4.00<br />
                                         Expected graduation: May 2021<br />
-                                        Coursework: Machine Learning, Regression Modeling, Categorical Data Analysis, Statistical Computing, Mathematical Statistics<br />
+                                        Coursework: Bayesian Statistics, Neural Networks, Machine Learning, Regression Modeling, Categorical Data Analysis, Survival Analysis, Statistical Computing, Mathematical Statistics<br />
                                     </p>
                                 </article>
                                 <article>
@@ -137,7 +105,7 @@
                                     <h2>The Travelers Companies &nbsp;|&nbsp; June 2020&ndash;August 2020</h2>
                                     <p class="subDetails">Data Science Intern (DSLDP), Business Insurance Analytics & Research</p>
                                     <ul>
-                                        <li>Implemented a propensity model in Python and used nonparametric matching to estimate the impact of a new pricing model</li>
+                                        <li>Implemented a propensity model using xgboost and used nonparametric matching to estimate the impact of a new pricing model</li>
                                         <li>Developed a suite of well-documented code that can be used to refresh the model and can be adapted to other projects</li>
                                         <li>Contributed several Python functions to a GitHub repository to support colleagues transitioning to Python</li>
                                         <li>Presented project to multiple groups over the course of the internship, adapting the presentation to each audience</li>
@@ -189,263 +157,11 @@
 
                     </div>
                 </div>
-            </div>
-            <div id="acting-wrapper">
+            </div><!--skip-->
+        </div><!--skip-->
+    </div><!--skip-->
 
-                <ul id="lightSlider" style="height:400px;">
-                    <li><img src="photos/02.jpg" /></li>
-                    <li><img src="photos/03.jpg" /></li>
-                    <li><img src="photos/09.jpg" /></li>
-                    <li><img src="photos/01.jpg" /></li>
-                    <li><img src="photos/06.jpg" /></li>
-                    <li><img src="photos/07.jpg" /></li>
-                    <li><img src="photos/05.jpg" /></li>
-                    <li><img src="photos/08.jpg" /></li>
-                </ul>
-
-                <div id="actor-resume">
-                    <div class="mainDetails">
-                        <div class="name">
-                            <h1>Will Jobs</h1>
-                        </div>
-                    </div>
-
-                    <div id="looks">
-                        <div>Height: 6'1"</div>
-                        <div>Weight: 185 lbs.</div>
-                        <div>Hair: Blonde</div>
-                        <div>Eyes: Blue</div>
-                        <div>Age Range: 21-35</div>
-                    </div>
-
-                    <section>
-                        <h2>THEATER:</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Burning</td>
-                                    <td>Cole</td>
-                                    <td>Theatre@First</td>
-                                </tr>
-                                <tr>
-                                    <td>MicroBrew</td>
-                                    <td>Ensemble</td>
-                                    <td>ImprovBoston</td>
-                                </tr>
-                                <tr>
-                                    <td>One-Minute Play Festival</td>
-                                    <td>Ensemble</td>
-                                    <td>Director: Alex Smith</td>
-                                </tr>
-                                <tr>
-                                    <td>The Mystery Play (staged reading)</td>
-                                    <td>Mouse; Death</td>
-                                    <td>The Poet&rsquo;s Theatre</td>
-                                </tr>
-                                <tr>
-                                    <td>Drunk Enough To Say I Love You?</td>
-                                    <td>Guy #1 (lead)</td>
-                                    <td>Artist&rsquo;s Theater of Boston</td>
-                                </tr>
-                                <tr>
-                                    <td>Murph (staged reading)</td>
-                                    <td>Murph</td>
-                                    <td>Open Theatre Project</td>
-                                </tr>
-                                <tr>
-                                    <td>The Love of the Nightingale</td>
-                                    <td>Captain; Theseus; Chorus</td>
-                                    <td>Open Theatre Project</td>
-                                </tr>
-                                <tr>
-                                    <td>Hunger, Lies &amp; History
-                                    </td>
-                                    <td>Cesar; Vampire</td>
-                                    <td>Performing Fusion Theatre</td>
-                                </tr>
-                                <tr>
-                                    <td>Lovers&rsquo; Quarrels</td>
-                                    <td>Val&egrave;re</td>
-                                    <td>Imaginary Beasts</td>
-                                </tr>
-                                <tr>
-                                    <td>Trojan Women: A Love Story</td>
-                                    <td>Aeneas</td>
-                                    <td>Artists&rsquo; Theater of Boston</td>
-                                </tr>
-                                <tr>
-                                    <td>Somerville Theatre Festival</td>
-                                    <td>Alec; Billy Dog</td>
-                                    <td>Performing Fusion Theatre</td>
-                                </tr>
-                                <tr>
-                                    <td>Killer Joe</td>
-                                    <td>Chris</td>
-                                    <td>Zero Point Theater</td>
-                                </tr>
-                                <tr>
-                                    <td>Stealing The Packard (staged reading)</td>
-                                    <td>Jasper</td>
-                                    <td>Theatre@First</td>
-                                </tr>
-                                <tr>
-                                    <td>Much Ado About Nothing</td>
-                                    <td>Benedick</td>
-                                    <td>Artists&rsquo; Theater of Boston</td>
-                                </tr>
-                                <tr>
-                                    <td>The Merchant of Venice</td>
-                                    <td>Bassanio</td>
-                                    <td>Zero Point Theater</td>
-                                </tr>
-                                <tr>
-                                    <td>David: The Musical</td>
-                                    <td>Uriah, Ensemble</td>
-                                    <td>Zero Point Theater</td>
-                                </tr>
-                                <tr>
-                                    <td>How The Other Half Loves</td>
-                                    <td>Bob Phillips</td>
-                                    <td>Zero Point Theater</td>
-                                </tr>
-                                <tr>
-                                    <td>Waiting For Lefty</td>
-                                    <td>Miller</td>
-                                    <td>Zero Point Theater</td>
-                                </tr>
-                                <tr>
-                                    <td>Zero Point Winter Festival</td>
-                                    <td>Ensemble</td>
-                                    <td>Zero Point Theater</td>
-                                </tr>
-                                <tr>
-                                    <td>A Midsummer Night&rsquo;s Dream</td>
-                                    <td>Lysander</td>
-                                    <td>Rhinebeck Performing Arts Center</td>
-                                </tr>
-                                <tr>
-                                    <td>Too Much Light Makes The Baby Go Blind</td>
-                                    <td>Writer/Director/Ensemble</td>
-                                    <td>Unbound (Vassar College)</td>
-                                </tr>
-                                <tr>
-                                    <td>Spinning Into Butter</td>
-                                    <td>Greg Sullivan</td>
-                                    <td>Philaletheis (Vassar College)</td>
-                                </tr>
-                                <tr>
-                                    <td>Happy Birthday, Wanda June!</td>
-                                    <td>Looseleaf Harper</td>
-                                    <td>Philaletheis (Vassar College)</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-
-                    <section>
-                        <h2>FILM:</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Freudian Slip</td>
-                                    <td>Tyler</td>
-                                    <td>Boston University student film</td>
-                                </tr>
-                                <tr>
-                                    <td>Express Lane</td>
-                                    <td>Paul</td>
-                                    <td>Vassar College student film</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-
-                    <section>
-                        <h2>TRAINING/EDUCATION:</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td>Meisner Technique</td>
-                                    <td>Lyralen Kaye</td>
-                                </tr>
-                                <tr>
-                                    <td>Chekhov Technique</td>
-                                    <td>Scott Fielding</td>
-                                </tr>
-                                <tr>
-                                    <td>Long-form Improv Comedy</td>
-                                    <td>Joe Creedon</td>
-                                </tr>
-                                <tr>
-                                    <td>Shakespeare Weekend Intensive</td>
-                                    <td>Shakespeare & Company</td>
-                                </tr>
-                                <tr>
-                                    <td>Improvisational Comedy 101-601</td>
-                                    <td>ImprovBoston</td>
-                                </tr>
-                                <tr>
-                                    <td>Beginning Modern Dance</td>
-                                    <td>Vassar College</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                    <section>
-                        <h2>OTHER SKILLS:</h2>
-                        <p>Improvisational comedy, directing, swing dancing, ballroom dancing, basic guitar, juggling</p>
-                    </section>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script type="text/javascript" src="dependencies/jquery-1.11.3.min.js"></script>
-    <script src="dependencies/lightslider/lightslider.min.js"></script>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-46805416-3', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-            $("#lightSlider").lightSlider({
-                item: 1,
-                mode: "fade",
-                speed: 650,
-                auto: true,
-                loop: true,
-                pause: 4000,
-                controls: true,
-                thumbItem: 10,
-                currentPagerPosition: 'middle'
-            });
-
-            if (window.location.hash) {
-                var hash = window.location.hash.substring(1);
-                if (hash === 'professional') {
-                    showProfessional(0);
-                } else {
-                    showActor(0);
-                }
-            } else {
-                showProfessional(0);
-            }
-
-            $('#container').show();
-
-        });
-
-    </script>
-
+    <script type="text/javascript" src="dependencies/jquery-1.11.3.min.js"></script><!--skip-->
 </body>
 
 </html>
