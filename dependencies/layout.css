@@ -1,381 +1,232 @@
-html.js #container { display: none; }
-
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
-	border:0;
-	font:inherit;
-	font-size:100%;
-	margin:0;
-	padding:0;
-	vertical-align:baseline;
+    border:0;
+    font:inherit;
+    font-size:100%;
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-	display:block;
+    display:block;
 }
 
 body {
-	font-family: 'Lato', helvetica, arial, sans-serif; 
-	font-weight: 400;
-	font-size: 16px; color: #222;
-	overflow-y: scroll;
+    font-family: 'Source Serif Pro', 'Georgia', 'Times New Roman', Times, serif; 
+    font-size: 18px;
+    overflow-y: scroll;
 }
 
-body > div {
-	max-width: 800px; 
-	margin: auto;
+#resume-wrapper {
+    display: block;
+    padding: 40px;
 }
 
-h1 {
-	font-size: 2.5em;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-weight: 600;
+
+#resume {
+    max-width: 800px; 
+    margin: auto;
+    border: 2px inset;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
 }
 
-.name h1 {
-	font-size: 3.5em;
+#main-details {
+    padding-top: 25px 35px 0px 35px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-h2 {
-	font-size: 2em;
-	margin-left: 2px;
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-weight:400;
+#name {
+    font-size: 2.5rem;
+    text-align: center;
 }
 
-.mainArea {
-	padding: 0 40px;
+.contact-details ul {
+    list-style-type: none;
+    margin-top: 2px;
 }
 
-.name {
-	float: left;
+.contact-details ul li {
+    font-size: 1rem;
+    margin-bottom: 3px;
+    display: inline-block;
+    margin-right: 15px;
 }
 
-.contactDetails {
-	float: right;
-	margin-top:7px;
-	font-size: 1.1em;
+.contact-details ul li a, a[href^=tel] {
+    color: #444; 
+    text-decoration: none;
 }
 
-.contactDetails ul {
-	list-style-type: none;
-	margin-top: 2px;
+.contact-details ul li a:hover { 
+    color: #3064b1;
 }
-
-.contactDetails ul li {
-	margin-bottom: 3px;
-	color: #444;
-}
-
-.contactDetails ul li a, a[href^=tel] {
-	color: #444; 
-	text-decoration: none;
-}
-
-.contactDetails ul li a:hover { 
-	color: #3064b1;
-}
-
-.clear {clear: both;}
 
 p, article li {
-	font-size: 0.9em;
-	line-height: 1.2em;
-	color: #444;
+    font-size: 0.9rem;
+    line-height: 1.2em;
 }
 
 p {
-	margin-bottom: 13px;
-}
-
-article li {
-	margin-bottom: 5px;
-}
-
-.sectionContent article p {
-	padding-left: 5px;
+    margin-bottom: 13px;
 }
 
 article ul {
-	padding-left: 2em;
-	text-indent: -1em;
-	list-style-type: none;
+    padding-left: 2em;
 }
 
-article ul li:before{
-	content: '\000BB';
-	display: block;
-	float: left;
-	width: 1em;
+article li {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    padding-right: 20px;
 }
 
 article ul:last-child {
-	padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 section:first-child {
-	border-top: 0;
+    border-top: 0;
 }
 
 section:last-child {
-	padding: 10px 0 5px;
+    padding: 10px 0 5px;
 }
 
-.sectionContent {
-	margin-left:15px;
+.section-content {
+    margin-left:15px;
 }
 
-.sectionTitle h1 {
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-style: italic;
-	font-weight: 400;
-	font-size: 1.5em;
-	color: #3064b1;
+.section-title {
+    font-size: 1rem;
+    padding-bottom: 2px;
+    border-bottom: 1px black solid;
+    margin-bottom: 4px;
 }
 
-.sectionContent h2 {
-	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-weight:600;
-	font-size: 1.3em;
-	margin-bottom: -2px;
+.section-content .dates {
+    font-size: 0.95rem;
+    font-variant: small-caps;
 }
 
-.subDetails {
-	font-size: 0.85em;
-	font-style: italic;
-	margin-bottom: 3px;
+.section-content .company {
+    font-size: 1.0rem;
+    font-weight: bold;
 }
 
-h1.headline {
-	text-align: center;
-	font-size: 2.5em;
-	font-size: calc(16px + 1.5vw);
+.section-content .position {
+    font-size: 1.05rem;
 }
 
-.activeID {
-	text-decoration: underline;
+.section-content .position2 {
+    font-size: 1.0rem;
+    padding-left: 8px;
 }
 
-.inactiveID {
-	text-decoration: none;
+.position2:before { 
+    font-family: "fontawesome";
+    content: '\f0aa';  /* e802 f0de f0aa f139 */
+    margin-right: 4px;
 }
 
-@-webkit-keyframes fadeIdentities {
-	0% {opacity: 1;}
-	30% {opacity: 0.8;}
-	50% {opacity: 0.6;}
-	80% {opacity: 0.8;}
-	100% {opacity: 0.9;}
+.col-left {
+    display: inline-block;
+    width: 80%;
 }
 
-@keyframes fadeIdentities {
-	0% {opacity: 1;}
-	30% {opacity: 0.9;}
-	50% {opacity: 0.5;}
-	80% {opacity: 0.8;}
-	100% {opacity: 0.9;}
+.col-right {
+    display: inline-block;
+    text-align: right;
+    clear:right;
 }
 
-.identity {
-	font-weight: bold;
-	color: #0000ff;
-	-webkit-animation: fadeIdentities 3s linear 1s infinite;
-	animation: fadeIdentities 3s linear 1s infinite;
+.tools {
+    font-style: italic;
 }
 
-.identity:hover {
-	color: #777;
-	cursor: pointer;
+.section-content.skills p {
+    margin-bottom: 3px;
 }
 
-.keySkills {
-	list-style-type: none;
-	margin-bottom: 20px;
-	font-size: 0.9em;
-	color: #444;
-}
-
-.keySkills li {
-	margin-bottom: 3px;
-}
-
-.keySkills li span {
-	font-weight: 600;
-}
-
-#professional-resume section {
-	padding: 10px 0 0;
-}
-
-#professional-wrapper > img {
-	max-width:100%;
-	max-height: 400px;
-	margin: auto;
-	display: block;
-	padding-bottom: 10px;
-}
-
-#professional-resume .mainDetails {
-	padding: 25px 35px;
-	border-bottom: 2px solid #3064b1;
-}
-
-#actor-resume, #professional-resume {
-	border: 2px inset;
-	margin: auto;
-	padding: 10px;
-	width: 100%;
-}
-
-#acting-wrapper, #professional-wrapper {
-	display: block;
-	margin-bottom: 10px;
-}
-
-#actor-resume .mainDetails {
-	padding: 25px 35px 10px 35px;
-}
-
-#actor-resume section:nth-of-type(1) ~ section {
-	padding-top: 15px ;
-}
-
-#actor-resume .mainDetails .name {
-	line-height: 2.3em;
-	float: none;
-	text-align: center;
-}
-
-#actor-resume .mainDetails div {
-	font-size: 1.1em;
-}
-
-#actor-resume section h2 {
-	border-bottom: 1px solid #333;
-}
-
-#actor-resume p {
-	font-size: 100%;
-	margin-left: 5px;
-}
-
-#looks {
-	text-align: center;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-	margin-bottom: 10px;
-}
-
-#looks > div {
-	display: inline-block;
-	width: 19%;
-	min-width: 125px;
-}
-
-#looks > div:nth-of-type(1) {
-	text-align:left;
-	padding-left:10px;
-}
-
-#lightSlider {
-	max-height:400px !important;
-}
-
-#lightSlider li {
-	max-width: 800px;
-	background-color: black;
-}
-
-#lightSlider img {
-	max-height: 400px;
-	max-width: 100%;
-	margin: auto;
-	display: block;
-}
-
-#actor-resume table {
-	width: 100%;
-}
-
-#actor-resume td {
-	padding-right:2px;
-	padding-left:15px;
-	text-indent: -10px;
-}
-
-#actor-resume td:nth-of-type(1) {
-	width: 38%;
-}
-
-#actor-resume td:nth-of-type(3) {
-	width: 34%;
+strong {
+    font-weight: bold;
 }
 
 @media screen and (max-width: 750px) {
-	#professional-resume {
-		margin: 10px auto;
-		min-width: 280px;
-	}
-	
-	.name, .contactDetails {
-		float: none;
-		width: 100%;
-		text-align: center;
-	}
-	
-	.sectionTitle, .sectionContent {
-		float: none;
-		width: 100%;
-	}
-	
-	.sectionTitle {
-		margin-left: -2px;
-		font-size: 1.25em;
-	}
+    #resume {
+        margin: 10px auto;
+        min-width: 280px;
+    }
+    
+    .name, .contact-details {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .section-title, .section-content {
+        float: none;
+        width: 100%;
+    }
+    
+    .section-title {
+        margin-left: -2px;
+        font-size: 1.25rem;
+    }
 
-	.mainDetails {
-		padding: 15px 15px;
-	}
-	
-	section {
-		padding: 15px 0 0;
-	}
-	
-	.mainArea {
-		padding: 0 25px;
-	}
+    .main-details {
+        padding: 15px 15px;
+    }
+    
+    section {
+        padding: 15px 0 0;
+    }
+    
+    .main-area {
+        padding: 0 25px;
+    }
 
-	.name h1 {
-		line-height: .8em;
-		margin-bottom: 4px;
-	}
+    .name h1 {
+        line-height: .8em;
+        margin-bottom: 4px;
+    }
 }
 
 @media screen and (max-width: 601px) {
-	html, body {
-		font-size: 14px;
-	}
+    html, body {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 401px) {
-	html, body {
-		font-size: 12px;
-	}
+    html, body {
+        font-size: 10px;
+    }
 }
 
 @media print {
-	html, body {
-		font-size: 14px;
-	}
+    html, body {
+        font-size: 14px;
+        overflow: visible;
+        overflow-y: visible;
+    }
+    
+    body > div {
+        max-width: 95%; 
+    }
 
-	#actor-resume, #professional-resume {
-		border: 0;
-		margin: auto;
-		padding: 10px;
-		padding-top: 20px;
-		width: 100%;
-	}
+    #resume {
+        border: 0;
+        width: 100%;
+    }
 
-	article li {
-		margin-bottom: 3px;
-	}
+    article li {
+        margin-bottom: 3px;
+    }
+
+    #resume-wrapper {
+        padding: 0px;
+    }
 }
