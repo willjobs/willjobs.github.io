@@ -64,6 +64,11 @@ body {
     color: #3064b1;
 }
 
+.bio {
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
 p, article li {
     font-size: 0.9rem;
     line-height: 1.2em;
